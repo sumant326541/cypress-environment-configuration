@@ -1,0 +1,18 @@
+{
+  "name": "cypress-environment-configuration",
+  "version": "1.0.0",
+  "description": "environment setup in cypress e2e automation",
+  "main": "index.js",
+  "scripts": {
+    "test":"Cypress run --spec cypress/e2e/testdefaultenv.cy.js",
+    "envtest": "Cypress run --spec cypress/e2e/testenv.cy.js",
+    "prodtest":"Cypress run --spec cypress/e2e/testprod.cy.js --config-file prod.config.js",
+    "stagetest":"Cypress run --spec cypress/e2e/teststage.cy.js --config-file stage.config.js"
+
+  },
+  "author": "Sumant Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  }
+}
